@@ -60,7 +60,8 @@ function calculateAreaPerimeter(shape) {
         Perimeter: shape.getPerimeter()
     };
 }
-console.log(calculateAreaPerimeter(circle)); // 314.1592653589793
-console.log(calculateAreaPerimeter(rectangle)); // 260
-console.log(calculateAreaPerimeter(triangle)); // 160
-console.log(calculateAreaPerimeter(trapezoid)); // 510
+console.log(calculateAreaPerimeter(circle)); // { Area: 314.1592653589793, Perimeter: 62.83185307179586 }
+console.log(calculateAreaPerimeter(rectangle)); // { Area: 200, Perimeter: 60 }
+console.log(calculateAreaPerimeter(triangle)); // { Area: 100, Perimeter: 50 }
+console.log(calculateAreaPerimeter(trapezoid)); // { Area: 450, Perimeter: 60 }
+// command line: tsc && node public/js/Shape.js

@@ -21,19 +21,19 @@ class Circle implements ShapeCalculatorInterface {
 
 class Rectangle implements ShapeCalculatorInterface {
     public length: number;
-    public breadth: number;
+    public width: number;
 
-    public constructor(length: number, breadth: number) {
+    public constructor(length: number, width: number) {
         this.length = length;
-        this.breadth = breadth;
+        this.width = width;
     }
 
     public getArea(): number {
-        return this.length * this.breadth;
+        return this.length * this.width;
     }
 
     public getPerimeter(): number {
-        return 2 * (this.length + this.breadth);
+        return 2 * (this.length + this.width);
     }
 }
 
@@ -57,21 +57,21 @@ class Triangle implements ShapeCalculatorInterface {
 
 class Trapezoid implements ShapeCalculatorInterface {
     public length: number;
-    public breadth: number;
+    public width: number;
     public height: number;
 
-    public constructor(length: number, breadth: number, height: number) {
+    public constructor(length: number, width: number, height: number) {
         this.length = length;
-        this.breadth = breadth;
+        this.width = width;
         this.height = height;
     }
 
     public getArea(): number {
-        return 0.5 * (this.length + this.breadth) * this.height;
+        return 0.5 * (this.length + this.width) * this.height;
     }
 
     public getPerimeter(): number {
-        return 2 * (this.length + this.breadth);
+        return 2 * (this.length + this.width);
     }
 }
 
