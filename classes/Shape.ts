@@ -1,9 +1,9 @@
-interface ShapeCalculatorInterface {
+interface iShape {
     getArea(): number;
     getPerimeter(): number;
 }
 
-class Circle implements ShapeCalculatorInterface {
+class Circle implements iShape {
     public radius: number;
 
     public constructor(radius: number) {
@@ -19,7 +19,7 @@ class Circle implements ShapeCalculatorInterface {
     }
 }
 
-class Rectangle implements ShapeCalculatorInterface {
+class Rectangle implements iShape {
     public length: number;
     public width: number;
 
@@ -37,7 +37,7 @@ class Rectangle implements ShapeCalculatorInterface {
     }
 }
 
-class Triangle implements ShapeCalculatorInterface {
+class Triangle implements iShape {
     public base: number;
     public height: number;
 
@@ -55,7 +55,7 @@ class Triangle implements ShapeCalculatorInterface {
     }
 }
 
-class Trapezoid implements ShapeCalculatorInterface {
+class Trapezoid implements iShape {
     public length: number;
     public width: number;
     public height: number;
@@ -82,7 +82,7 @@ const rectangle = new Rectangle(10, 20);
 const triangle = new Triangle(10, 20);
 const trapezoid = new Trapezoid(10, 20, 30);
 
-function calculateAreaPerimeter(shape: Circle | Rectangle | Triangle | Trapezoid) {
+function calculateAreaPerimeter(shape: iShape) {
     return {
         Area: shape.getArea(),
         Perimeter: shape.getPerimeter()
