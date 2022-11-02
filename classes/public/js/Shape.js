@@ -11,15 +11,15 @@ var Circle = /** @class */ (function () {
     return Circle;
 }());
 var Rectangle = /** @class */ (function () {
-    function Rectangle(length, breadth) {
+    function Rectangle(length, width) {
         this.length = length;
-        this.breadth = breadth;
+        this.width = width;
     }
     Rectangle.prototype.getArea = function () {
-        return this.length * this.breadth;
+        return this.length * this.width;
     };
     Rectangle.prototype.getPerimeter = function () {
-        return 2 * (this.length + this.breadth);
+        return 2 * (this.length + this.width);
     };
     return Rectangle;
 }());
@@ -37,16 +37,16 @@ var Triangle = /** @class */ (function () {
     return Triangle;
 }());
 var Trapezoid = /** @class */ (function () {
-    function Trapezoid(length, breadth, height) {
+    function Trapezoid(length, width, height) {
         this.length = length;
-        this.breadth = breadth;
+        this.width = width;
         this.height = height;
     }
     Trapezoid.prototype.getArea = function () {
-        return 0.5 * (this.length + this.breadth) * this.height;
+        return 0.5 * (this.length + this.width) * this.height;
     };
     Trapezoid.prototype.getPerimeter = function () {
-        return 2 * (this.length + this.breadth);
+        return 2 * (this.length + this.width);
     };
     return Trapezoid;
 }());
