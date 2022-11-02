@@ -1,6 +1,6 @@
-import State from "./classes/State.ts";
-import Observer from "./classes/Observer.ts";
-import Subject from "./classes/Subject.ts";
+import State from "./classes/State.js";
+import Observer from "./classes/Observer.js";
+import Subject from "./classes/Subject.js";
 
 const subjectOne = new Subject();
 const subjectTwo = new Subject();

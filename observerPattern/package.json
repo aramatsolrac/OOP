@@ -1,5 +1,6 @@
 {
-  "devDependencies": {
+  "type": "module",
+  "dependencies": {
     "typescript": "^4.8.4"
   }
 }
